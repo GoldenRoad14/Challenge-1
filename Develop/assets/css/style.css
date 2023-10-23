@@ -14,14 +14,14 @@ body {
     background-color: #2a607c;
     color: #ffffff;
 }
-
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
+/* .header contains h1 child class (.seo) to highlight 'SEO' characters in the company name */
 
 .header h1 .seo {
-    color: #d9dcd6;
+    color: #dcd6d6;
 }
 
 .header div {
@@ -58,7 +58,69 @@ p {
     background-size: cover;
     background-position: center;
 }
+/* content class defines the main conent of the page with 3 sections, SEO, Online Rep Management, Social Media Marketing. */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
 
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* The img subclasses define the sizes attributes of the images for each subclass within the content class */
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+/* the h2 subclasses define the specific h2 attributes for each subclass within the content class */
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* float attributes tell the browser where to align the images within each subclass of the content class */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -69,12 +131,7 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
+/* benefits class defines the sidebar with additional info for the user. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,6 +143,7 @@ p {
     background-color: #2589bd;
 }
 
+/* each of the benefit classes (lead, brand, cost) provide spacing and color attributes for each section */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -101,6 +159,7 @@ p {
     color: #ffffff;
 }
 
+/* these attributes provide text and image attributes for the content on the benefits side bar */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -134,60 +193,8 @@ p {
     max-width: 150px;
 }
 
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* footer attributes including defining header size and paragraph size */
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +202,11 @@ p {
     text-align: center;
 }
 
-.footer h2 {
-    font-size: 20px;
+/* Changed footer to h4 to follow sequential header size order */
+.footer h4 {
+    font-size: 12px;
+}
+/* added footer p attributes to keep font smaller than H4 on line above */
+.footer p {
+    font-size: 10px;
 }
