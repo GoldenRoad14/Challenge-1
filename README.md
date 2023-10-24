@@ -1,9 +1,13 @@
 # Code Refactor Starter Code
 
-#Accessibility Edits
+#Overview:
 
-##Corrected broken link on page.
+Refactoring code to add accessability features.
 
-##Added Alt tags to all images. 
+#How to use:
 
-#Reorganized CSS to flow in the order of the page. 
+With a browser
+
+#Thanks to:
+
+Me
